@@ -1,0 +1,40 @@
+.section {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.section.small {
+  padding: 3rem 0;
+}
+
+.section.large {
+  padding: 8rem 0;
+}
+
+.section.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.section.light {
+  background-color: #fafafa;
+}
+
+.section.bordered {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section.small {
+    padding: 2rem 0;
+  }
+
+  .section.large {
+    padding: 5rem 0;
+  }
+}

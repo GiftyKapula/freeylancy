@@ -1,0 +1,159 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+  transition: transform 300ms ease;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.headerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #666666;
+  text-decoration: none;
+  transition: color 200ms ease;
+  letter-spacing: 0.01em;
+}
+
+.navLink:hover {
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+.cta {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Mobile menu toggle */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 2px;
+  background-color: #1a1a1a;
+  position: relative;
+  transition: background-color 200ms;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #1a1a1a;
+  left: 0;
+  transition: transform 200ms;
+}
+
+.menuIcon::before {
+  top: -8px;
+}
+
+.menuIcon::after {
+  bottom: -8px;
+}
+
+.menuToggle.active .menuIcon {
+  background-color: transparent;
+}
+
+.menuToggle.active .menuIcon::before {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menuToggle.active .menuIcon::after {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 1rem 1.5rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .navLink {
+    font-size: 1.125rem;
+  }
+
+  .cta {
+    width: 100%;
+  }
+}

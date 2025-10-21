@@ -1,0 +1,140 @@
+.services {
+  background-color: #fafafa;
+  padding: 8rem 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  max-width: 700px;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0052ff;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background-color: #ffffff;
+  padding: 3rem;
+  border: 1px solid #e5e5e5;
+  transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  border-color: #0052ff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.serviceHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #0052ff;
+  padding: 0.25rem 0.75rem;
+  background-color: #e6eeff;
+  border-radius: 2px;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666;
+  flex-grow: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .services {
+    padding: 5rem 0;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceCard {
+    padding: 2rem;
+  }
+
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
