@@ -141,7 +141,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp: {t("contact.info.phone")}
+                  💬 {t("contact.info.phone")}
                 </a>
               </li>
               <li>
@@ -154,7 +154,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp: {t("contact.info.phoneAlt")}
+                  💬 {t("contact.info.phoneAlt")}
                 </a>
               </li>
               <li>
