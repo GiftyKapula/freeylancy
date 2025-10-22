@@ -177,6 +177,44 @@ const translations = {
         },
       },
     },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "FAQ",
+      description:
+        "Have questions? We've got answers. Find everything you need to know about working with us.",
+      items: {
+        faq1: {
+          question: "What is your typical project timeline?",
+          answer:
+            "Project timelines vary based on scope and complexity. A simple website typically takes 2-4 weeks, while a custom web application can take 8-12 weeks. We provide a detailed timeline during our initial consultation and keep you updated throughout the process.",
+        },
+        faq2: {
+          question: "Do you offer ongoing support after launch?",
+          answer:
+            "Absolutely! We offer various maintenance and support packages to ensure your digital product continues to perform optimally. This includes updates, bug fixes, security patches, and technical assistance.",
+        },
+        faq3: {
+          question: "What technologies do you work with?",
+          answer:
+            "We specialize in modern web and mobile technologies including React, React Native, Node.js, and popular no-code platforms like Framer, Webflow, and Wix Studio. We also work with cloud services like AWS and Supabase for scalable solutions.",
+        },
+        faq4: {
+          question: "How much does a project typically cost?",
+          answer:
+            "Project costs vary significantly based on requirements, features, and complexity. We offer flexible pricing options and work with various budgets. Contact us for a free consultation and custom quote tailored to your specific needs.",
+        },
+        faq5: {
+          question: "Can you help with an existing project?",
+          answer:
+            "Yes! We frequently work on existing projects, whether you need additional features, performance improvements, redesigns, or bug fixes. We can assess your current solution and provide recommendations for enhancement.",
+        },
+        faq6: {
+          question: "Do you work with international clients?",
+          answer:
+            "Yes, we work with clients worldwide! We have experience collaborating across different time zones and offer flexible communication options including video calls, messaging, and project management tools to ensure smooth collaboration.",
+        },
+      },
+    },
     contact: {
       title: "Let's Work Together",
       subtitle: "Get In Touch",
@@ -380,6 +418,44 @@ const translations = {
           text: "Исключительная работа от начала до конца. Их дизайнерские навыки на высшем уровне, и они сделали весь процесс гладким и без стресса.",
           name: "Лиза Томпсон",
           role: "Менеджер продукта, DesignHub",
+        },
+      },
+    },
+    faq: {
+      title: "Часто задаваемые вопросы",
+      subtitle: "FAQ",
+      description:
+        "Есть вопросы? У нас есть ответы. Найдите всё, что вам нужно знать о работе с нами.",
+      items: {
+        faq1: {
+          question: "Каковы типичные сроки проекта?",
+          answer:
+            "Сроки проекта варьируются в зависимости от объема и сложности. Простой веб-сайт обычно занимает 2-4 недели, в то время как пользовательское веб-приложение может занять 8-12 недель. Мы предоставляем подробный график во время первоначальной консультации и держим вас в курсе на протяжении всего процесса.",
+        },
+        faq2: {
+          question: "Предоставляете ли вы постоянную поддержку после запуска?",
+          answer:
+            "Абсолютно! Мы предлагаем различные пакеты обслуживания и поддержки, чтобы ваш цифровой продукт продолжал работать оптимально. Это включает обновления, исправление ошибок, патчи безопасности и техническую помощь.",
+        },
+        faq3: {
+          question: "С какими технологиями вы работаете?",
+          answer:
+            "Мы специализируемся на современных веб и мобильных технологиях, включая React, React Native, Node.js и популярные no-code платформы, такие как Framer, Webflow и Wix Studio. Мы также работаем с облачными сервисами, такими как AWS и Supabase для масштабируемых решений.",
+        },
+        faq4: {
+          question: "Сколько обычно стоит проект?",
+          answer:
+            "Стоимость проекта значительно варьируется в зависимости от требований, функций и сложности. Мы предлагаем гибкие варианты ценообразования и работаем с различными бюджетами. Свяжитесь с нами для бесплатной консультации и индивидуального предложения.",
+        },
+        faq5: {
+          question: "Можете ли вы помочь с существующим проектом?",
+          answer:
+            "Да! Мы часто работаем над существующими проектами, будь то дополнительные функции, улучшение производительности, редизайн или исправление ошибок. Мы можем оценить ваше текущее решение и предоставить рекомендации по улучшению.",
+        },
+        faq6: {
+          question: "Работаете ли вы с международными клиентами?",
+          answer:
+            "Да, мы работаем с клиентами по всему миру! У нас есть опыт сотрудничества в разных часовых поясах, и мы предлагаем гибкие варианты коммуникации, включая видеозвонки, обмен сообщениями и инструменты управления проектами для обеспечения бесперебойного сотрудничества.",
         },
       },
     },

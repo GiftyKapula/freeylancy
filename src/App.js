@@ -6,6 +6,7 @@ import Services from "./sections/Services";
 import Benefits from "./sections/Benefits";
 import Work from "./sections/Work";
 import Testimonials from "./sections/Testimonials";
+import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import "./styles/global.css";
@@ -25,6 +26,7 @@ function App() {
           <Benefits />
           <Work />
           <Testimonials />
+          <FAQ />
           <Contact />
         </main>
         <Footer />
