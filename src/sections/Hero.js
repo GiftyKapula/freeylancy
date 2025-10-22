@@ -1,9 +1,12 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 import Button from "../components/Button";
 import { technologies } from "../data/content";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -15,19 +18,11 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>
-          <div className={styles.eyebrow}>Design & Development Agency</div>
+          <div className={styles.eyebrow}>{t("hero.eyebrow")}</div>
 
-          <h1 className={styles.title}>
-            Design. Build.
-            <br />
-            Deliver.
-          </h1>
+          <h1 className={styles.title}>{t("hero.title")}</h1>
 
-          <p className={styles.subtitle}>
-            We transform ideas into exceptional digital experiences. From
-            concept to launch, we handle design, development, and deployment of
-            websites and mobile applications.
-          </p>
+          <p className={styles.subtitle}>{t("hero.description")}</p>
 
           <div className={styles.ctas}>
             <Button
@@ -35,19 +30,21 @@ const Hero = () => {
               size="large"
               onClick={() => scrollToSection("contact")}
             >
-              Start Your Project
+              {t("hero.startProject")}
             </Button>
             <Button
               variant="secondary"
               size="large"
               onClick={() => scrollToSection("work")}
             >
-              View Our Work
+              {t("hero.viewWork")}
             </Button>
           </div>
 
           <div className={styles.technologies}>
-            <div className={styles.techLabel}>Technologies We Use</div>
+            <div className={styles.techLabel}>
+              {t("hero.technologiesLabel")}
+            </div>
             <div className={styles.techGrid}>
               {technologies.map((tech, index) => (
                 <span key={index} className={styles.techItem}>

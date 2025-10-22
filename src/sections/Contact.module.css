@@ -79,6 +79,12 @@
   opacity: 1;
 }
 
+.phoneNumbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .form {
   background-color: #ffffff;
   padding: 3rem;

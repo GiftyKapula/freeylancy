@@ -1,8 +1,11 @@
 import React from "react";
+import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
+import Benefits from "./sections/Benefits";
 import Work from "./sections/Work";
+import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import "./styles/global.css";
@@ -13,16 +16,20 @@ import "./styles/global.css";
  */
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Work />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Header />
+        <main>
+          <Hero />
+          <Services />
+          <Benefits />
+          <Work />
+          <Testimonials />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 import Button from "../components/Button";
 import styles from "./Header.module.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,7 +41,7 @@ const Header = () => {
                 className={styles.navLink}
                 onClick={(e) => scrollToSection(e, "services")}
               >
-                Services
+                {t("nav.services")}
               </a>
             </li>
             <li>
@@ -48,7 +50,7 @@ const Header = () => {
                 className={styles.navLink}
                 onClick={(e) => scrollToSection(e, "work")}
               >
-                Work
+                {t("nav.work")}
               </a>
             </li>
             <li>
@@ -57,7 +59,7 @@ const Header = () => {
                 className={styles.navLink}
                 onClick={(e) => scrollToSection(e, "about")}
               >
-                About
+                {t("nav.about")}
               </a>
             </li>
             <li>
@@ -66,10 +68,17 @@ const Header = () => {
                 className={styles.navLink}
                 onClick={(e) => scrollToSection(e, "contact")}
               >
-                Contact
+                {t("nav.contact")}
               </a>
             </li>
           </ul>
+          <button
+            className={styles.langToggle}
+            onClick={toggleLanguage}
+            aria-label="Toggle language"
+          >
+            {language === "en" ? "RU" : "EN"}
+          </button>
           <Button
             variant="primary"
             size="small"
@@ -77,7 +86,7 @@ const Header = () => {
             href="#contact"
             onClick={(e) => scrollToSection(e, "contact")}
           >
-            Get Started
+            {t("nav.getStarted")}
           </Button>
         </nav>
       </div>

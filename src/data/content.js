@@ -24,7 +24,7 @@ export const projects = [
     technologies: ["React", "AI/ML", "Node.js"],
     platform: "Web",
     viewLink: "https://sytesnap.netlify.app/",
-    image: "/images/sytesnap.png",
+    image: "/images/sytesnap-final-1.0.png",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const projects = [
     technologies: ["React", "Figma", "UI/UX Design"],
     platform: "Web",
     viewLink: "https://www.saccord.com/",
-    image: "/images/saccord2.png",
+    image: "/images/saccord-final-1.0.png",
   },
 ];
 
@@ -96,6 +96,8 @@ export const technologies = [
   "HTML/CSS",
   "JavaScript",
   "AI/ML",
+  "AWS",
+  "Supabase",
 ];
 
 export const stats = [
@@ -110,8 +112,9 @@ export const companyInfo = {
   tagline: "Design. Build. Deliver.",
   description:
     "We transform ideas into exceptional digital experiences. From concept to launch, we handle design, development, and deployment of websites and mobile applications.",
-  email: "hello@freeylancy.com",
-  phone: "+1 (555) 123-4567",
+  email: "giftykapula2@gmail.com",
+  phone: "+260 768 215 967",
+  phoneAlt: "+7 916 868-68-04",
   address: "Working worldwide",
   social: {
     twitter: "#",

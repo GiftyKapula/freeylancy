@@ -40,34 +40,25 @@
 }
 
 .projectsGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .projectCard {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.projectCard:nth-child(even) {
-  direction: rtl;
-}
-
-.projectCard:nth-child(even) > * {
-  direction: ltr;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectImage {
   width: 100%;
-  aspect-ratio: 16/10;
+  height: 280px;
   background-color: #f5f5f5;
   border: 1px solid #e5e5e5;
   overflow: hidden;
   position: relative;
   border-radius: 4px;
+  margin-bottom: 1.5rem;
 }
 
 .projectImage img {
@@ -86,7 +77,7 @@
 .projectContent {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .projectMeta {
@@ -114,15 +105,15 @@
 }
 
 .projectName {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1a1a1a;
   letter-spacing: -0.02em;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .projectDescription {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
   color: #666666;
 }
@@ -134,9 +125,9 @@
 }
 
 .techBadge {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #666666;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 0.75rem;
   border: 1px solid #e5e5e5;
   background-color: #fafafa;
 }
@@ -166,20 +157,12 @@
   }
 
   .projectsGrid {
-    gap: 4rem;
-  }
-
-  .projectCard {
     grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .projectCard:nth-child(even) {
-    direction: ltr;
+    gap: 3rem;
   }
 
   .projectImage {
-    aspect-ratio: 16/10;
+    height: 220px;
   }
 
   .projectName {
@@ -197,14 +180,15 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
-  .projectCard {
-    gap: 3rem;
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
   .projectName {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
