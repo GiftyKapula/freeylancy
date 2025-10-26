@@ -17,17 +17,6 @@ const Footer = () => {
             <ul className={styles.socialLinks}>
               <li>
                 <a
-                  href={companyInfo.social.twitter}
-                  className={styles.socialLink}
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  𝕏
-                </a>
-              </li>
-              <li>
-                <a
                   href={companyInfo.social.linkedin}
                   className={styles.socialLink}
                   aria-label="LinkedIn"
@@ -39,24 +28,52 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href={companyInfo.social.github}
+                  href={`https://wa.me/${t("contact.info.phone").replace(
+                    /[\s-]/g,
+                    ""
+                  )}`}
                   className={styles.socialLink}
-                  aria-label="GitHub"
+                  aria-label="WhatsApp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  gh
+                  wa
                 </a>
               </li>
               <li>
                 <a
-                  href={companyInfo.social.dribbble}
+                  href={`https://t.me/mositech_chat`}
                   className={styles.socialLink}
-                  aria-label="Dribbble"
+                  aria-label="Telegram"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  dr
+                  tg
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://wa.me/${t("contact.info.phone").replace(
+                    /[\s-]/g,
+                    ""
+                  )}`}
+                  className={styles.socialLink}
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  wa
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://t.me/mositech_chat`}
+                  className={styles.socialLink}
+                  aria-label="Telegram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  tg
                 </a>
               </li>
             </ul>

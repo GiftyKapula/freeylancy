@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language, toggleLanguage, t } = useLanguage();
+  const { language, setLanguage, toggleLanguage, t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,7 +23,30 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.logo}>Freeylancy</div>
+        <div className={styles.leftGroup}>
+          <div className={styles.logo}>Freeylancy</div>
+
+          <div className={styles.langActions}>
+            <button
+              className={`${styles.langBtn} ${
+                language === "en" ? styles.active : ""
+              }`}
+              onClick={() => setLanguage("en")}
+              aria-label="Set language to English"
+            >
+              EN
+            </button>
+            <button
+              className={`${styles.langBtn} ${
+                language === "ru" ? styles.active : ""
+              }`}
+              onClick={() => setLanguage("ru")}
+              aria-label="Set language to Russian"
+            >
+              RU
+            </button>
+          </div>
+        </div>
 
         <button
           className={`${styles.menuToggle} ${isMenuOpen ? styles.active : ""}`}
@@ -32,7 +55,6 @@ const Header = () => {
         >
           <span className={styles.menuIcon}></span>
         </button>
-
         <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ""}`}>
           <ul className={styles.navLinks}>
             <li>
@@ -72,13 +94,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <button
-            className={styles.langToggle}
-            onClick={toggleLanguage}
-            aria-label="Toggle language"
-          >
-            {language === "en" ? "RU" : "EN"}
-          </button>
+          {/* CTA inside nav stays the same */}
           <Button
             variant="primary"
             size="small"

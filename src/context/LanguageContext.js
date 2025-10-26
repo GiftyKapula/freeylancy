@@ -12,7 +12,8 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  // Default to Russian on first load
+  const [language, setLanguage] = useState("ru");
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "ru" : "en"));
@@ -30,7 +31,9 @@ export const LanguageProvider = ({ children }) => {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+    <LanguageContext.Provider
+      value={{ language, setLanguage, toggleLanguage, t }}
+    >
       {children}
     </LanguageContext.Provider>
   );

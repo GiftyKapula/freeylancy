@@ -30,10 +30,45 @@
   letter-spacing: -0.02em;
 }
 
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav {
   display: flex;
   gap: 2.5rem;
   align-items: center;
+}
+
+.langActions {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.langBtn {
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 160ms ease;
+  margin-right: 0.25rem;
+}
+
+.langBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.langBtn.active {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
 }
 
 .navLinks {
@@ -136,6 +171,7 @@
 
   .menuToggle {
     display: block;
+    order: 3;
   }
 
   .nav {
@@ -171,9 +207,20 @@
     font-size: 1.125rem;
   }
 
+  /* keep language toggle visible and compact on mobile */
+  .langActions {
+    order: 1;
+    margin-right: 0.5rem;
+  }
+
+  /* ensure menu toggle sits top-right */
+  .menuToggle {
+    margin-left: auto;
+  }
+
   .langToggle {
-    width: 100%;
-    padding: 0.75rem 1.5rem;
+    width: auto;
+    padding: 0.5rem 0.75rem;
   }
 
   .cta {

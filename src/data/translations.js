@@ -43,7 +43,22 @@ const translations = {
         data: {
           title: "Data Solutions",
           description:
-            "Transform raw data into actionable insights that drive business decisions.",
+            "End-to-end data capabilities — database setup and migration, multi-source consolidation, ETL pipelines and data reliability to power analytics and ML.",
+        },
+        dataAnalytics: {
+          title: "Data Analytics & Visualization",
+          description:
+            "Interactive dashboards and clear data storytelling. Real-time dashboards (Power BI), custom KPIs and metrics, and visualizations to help teams act faster.",
+        },
+        predictiveAI: {
+          title: "Predictive Analytics & AI Solutions",
+          description:
+            "Demand and trend forecasting, anomaly monitoring, custom ML models, and chatbots/virtual assistants to automate and augment decision-making.",
+        },
+        engineering: {
+          title: "Data Engineering & Integration",
+          description:
+            "Robust data pipelines, database migrations, multi-source consolidation and streaming solutions for scalable, real-time data flow.",
         },
         prototyping: {
           title: "Prototyping",
@@ -286,7 +301,22 @@ const translations = {
         data: {
           title: "Решения для данных",
           description:
-            "Преобразование сырых данных в действенные идеи, которые способствуют принятию бизнес-решений.",
+            "Комплексные возможности с данными — настройка и миграция баз данных, консолидация из нескольких источников, ETL-процессы и надежная основа для аналитики и ML.",
+        },
+        dataAnalytics: {
+          title: "Аналитика и визуализация данных",
+          description:
+            "Интерактивные панели и понятные визуализации. Реальные интерактивные дашборды (Power BI), пользовательские KPI и метрики для быстрого принятия решений.",
+        },
+        predictiveAI: {
+          title: "Прогностическая аналитика и AI-решения",
+          description:
+            "Прогнозирование спроса и трендов, мониторинг аномалий, кастомные ML-модели и чат-боты/виртуальные ассистенты для автоматизации и поддержки решений.",
+        },
+        engineering: {
+          title: "Инженерия данных и интеграция",
+          description:
+            "Надежные конвейеры данных, миграции баз данных, консолидация источников и стриминговые решения для масштабируемого и实时 потока данных.",
         },
         prototyping: {
           title: "Прототипирование",

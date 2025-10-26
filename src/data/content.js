@@ -43,6 +43,7 @@ export const projects = [
 export const services = [
   {
     id: 1,
+    key: "design",
     title: "UI/UX Design",
     tools: ["Figma", "Framer"],
     description:
@@ -50,6 +51,7 @@ export const services = [
   },
   {
     id: 2,
+    key: "webDev",
     title: "Web Development",
     tools: ["React", "HTML/CSS", "JavaScript"],
     description:
@@ -57,6 +59,7 @@ export const services = [
   },
   {
     id: 3,
+    key: "mobileDev",
     title: "Mobile Development",
     tools: ["React Native"],
     description:
@@ -64,6 +67,7 @@ export const services = [
   },
   {
     id: 4,
+    key: "noCode",
     title: "No-Code Solutions",
     tools: ["Webflow", "WixStudio"],
     description:
@@ -71,13 +75,39 @@ export const services = [
   },
   {
     id: 5,
+    key: "data",
     title: "Data Solutions",
-    tools: ["DataMining", "Analytics"],
+    tools: ["DataMining", "Analytics", "ETL", "Databases"],
     description:
-      "Transform raw data into actionable insights that drive business decisions.",
+      "End-to-end data capabilities — from database setup and migration to multi-source consolidation and ETL pipelines. We turn data into a reliable, secure foundation for analytics and ML.",
+  },
+  {
+    id: 7,
+    key: "dataAnalytics",
+    title: "Data Analytics & Visualization",
+    tools: ["Power BI", "Looker", "Tableau"],
+    description:
+      "Interactive dashboards and clear data storytelling. We build real-time dashboards (Power BI), custom KPIs and metrics, and visualizations that help teams act faster.",
+  },
+  {
+    id: 8,
+    key: "predictiveAI",
+    title: "Predictive Analytics & AI Solutions",
+    tools: ["Python", "TensorFlow", "scikit-learn"],
+    description:
+      "Forecasting and intelligent automation — demand & trend forecasting, anomaly monitoring, custom ML models, and conversational AI like chatbots and virtual assistants.",
+  },
+  {
+    id: 9,
+    key: "engineering",
+    title: "Data Engineering & Integration",
+    tools: ["Postgres", "ETL", "Kafka"],
+    description:
+      "Robust data pipelines, database migrations and multi-source consolidation for scalable, real-time data flow. We design ingestion, transformation and streaming solutions.",
   },
   {
     id: 6,
+    key: "prototyping",
     title: "Prototyping",
     tools: ["Framer", "Figma"],
     description:
