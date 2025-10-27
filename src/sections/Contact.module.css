@@ -197,6 +197,18 @@
     margin: 0 auto;
   }
 
+  /* Ensure grid items center horizontally on small screens so form doesn't shift to the right */
+  .contactGrid {
+    justify-items: center;
+  }
+
+  .contactInfo,
+  .form {
+    width: 100%;
+    max-width: 720px; /* reasonable max for mobile/tablet */
+    box-sizing: border-box;
+  }
+
   .formGrid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
