@@ -89,6 +89,11 @@
   background-color: #ffffff;
   padding: 3rem;
   border: 1px solid #2d2d2d;
+  /* Ensure the form centers inside its grid column and does not float right on small screens */
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .formGrid {
@@ -188,6 +193,8 @@
 
   .form {
     padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .formGrid {

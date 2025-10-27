@@ -28,32 +28,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href={`https://wa.me/${t("contact.info.phone").replace(
-                    /[\s-]/g,
-                    ""
-                  )}`}
-                  className={styles.socialLink}
-                  aria-label="WhatsApp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  wa
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`https://t.me/mositech_chat`}
-                  className={styles.socialLink}
-                  aria-label="Telegram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  tg
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`https://wa.me/${t("contact.info.phone").replace(
+                  href={`https://wa.me/${t("contact.info.phoneAlt").replace(
                     /[\s-]/g,
                     ""
                   )}`}
