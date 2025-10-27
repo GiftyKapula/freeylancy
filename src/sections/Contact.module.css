@@ -202,8 +202,10 @@
     justify-items: center;
   }
 
-  .contactInfo,
-  .form {
+  /* Force each direct child of the contact grid to center itself and constrain width
+     This ensures the form and the info column appear centered in the viewport */
+  .contactGrid > * {
+    justify-self: center;
     width: 100%;
     max-width: 720px; /* reasonable max for mobile/tablet */
     box-sizing: border-box;

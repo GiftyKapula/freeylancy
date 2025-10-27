@@ -19,6 +19,8 @@ const translations = {
     services: {
       title: "What We Do",
       subtitle: "Services",
+      dataGroupTitle: "Data & AI Solutions",
+      devGroupTitle: "Web & Mobile Development",
       items: {
         design: {
           title: "UI/UX Design",
@@ -277,6 +279,8 @@ const translations = {
     services: {
       title: "Что мы делаем",
       subtitle: "Услуги",
+      dataGroupTitle: "Данные и AI-решения",
+      devGroupTitle: "Веб и мобильная разработка",
       items: {
         design: {
           title: "UI/UX Дизайн",

@@ -40,9 +40,30 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* Use flexbox to allow rows to wrap and be centered when the last row
+     has fewer items. Each card will have a base width and a max-width so
+     they remain readable on large screens while centering nicely. */
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center; /* center items on incomplete rows */
+}
+
+.dataSection {
+  margin-top: 3.5rem;
+}
+
+.subHeader {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.dataTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 0.5rem;
 }
 
 .serviceCard {
@@ -53,6 +74,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+/* Make each card flexible but constrained so multiple cards can sit side-by-side
+   and rows with fewer cards will be centered by the parent `.grid`. */
+.serviceCard {
+  flex: 1 1 320px;
+  max-width: 420px;
 }
 
 .serviceCard:hover {
